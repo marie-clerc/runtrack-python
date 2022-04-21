@@ -9,8 +9,8 @@ class Vehicule():
 
 class Camion(Vehicule):
 	def __init__(self, roue, marque, couleur, moteur):
-		super().__init__(roue, marque, couleur)
-		# Vehicule.__init__(self, roue, marque, couleur)
+		# super().__init__(roue, marque, couleur)
+		Vehicule.__init__(self, roue, marque, couleur)
 		self.moteur = moteur
 
 	def printmoteur(self):
